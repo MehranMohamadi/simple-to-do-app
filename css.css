@@ -2,14 +2,22 @@
     box-sizing: border-box;
 }
 
-body{
-    background: rgb(29,43,100);
-    background: linear-gradient(90deg, rgba(29,43,100,1) 10%, rgb(49, 122, 147) 51%);
+body {
+    background: rgb(29, 43, 100);
+    background: linear-gradient(90deg, rgba(29, 43, 100, 1) 10%, rgb(49, 122, 147) 51%);
 }
+
 ul {
     margin: 0;
     padding: 0;
     direction: rtl;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    align-content: space-around;
+
 }
 
 ul li {
@@ -20,7 +28,7 @@ ul li {
     background: rgba(238, 238, 238, 0.4);
     font-size: 18px;
     transition: 0.2s;
-
+    width: 50%;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -33,7 +41,7 @@ ul li:nth-child(odd) {
 
 
 ul li:hover {
-    background: rgb(29,33,100);
+    background: rgb(29, 33, 100);
     background: linear-gradient(90deg, rgb(29, 94, 100) 10%, rgba(228, 205, 248, 0.91) 100%);
 }
 
@@ -43,7 +51,6 @@ ul li.checked {
     color: #fff;
     text-decoration: line-through;
 }
-
 
 
 .close {
@@ -67,6 +74,9 @@ ul li.checked {
     border-radius: 30px;
     color: #7CB9E8;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header:after {
@@ -82,21 +92,20 @@ input {
     margin: 0;
     border: none;
 
-    width: 75%;
+    width: 30%;
     padding: 10px;
-    float: left;
+
     font-size: 16px;
 }
-
 
 .addBtn {
     padding: 10px;
     border-radius: 30px;
-    width: 25%;
+    width: 8%;
     background: #7CB9E8;
     color: #ffffff;
     font-weight: bold;
-    float: left;
+
     text-align: center;
     font-size: 16px;
     cursor: pointer;
